@@ -1,6 +1,11 @@
 .item{
-    width: 350px;
+    width: 250px;
     background: yellow;
+}
+
+.item img{
+    width: 100%;
+    object-fit: cover;
 }
 
 .item p{
