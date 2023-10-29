@@ -1,11 +1,10 @@
-import logo from './logo.svg'
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Shop from './Pages/Shop';
 import ShopCategory from './Pages/ShopCategory';
 import { Product } from './Pages/Product';
-import {Cart} from './Pages/Cart'
+import CartItems from './components/CartItems/CartItems.jsx'
 import Footer from '../src/components/Footer/Footer.jsx'
 import men_banner from './components/Assets/banner_mens.png'
 import women_banner from './components/Assets/banner_women.png'
@@ -25,7 +24,7 @@ function App() {
         <Route path="/product" element={<Product/>}>
           <Route path=":productId" element={<Product/>} />
         </Route>
-        <Route path="/cart" element={<Cart/>} />
+        <Route path="/cart" element={<CartItems />} />
         <Route path="/login" element={<LoginSignup/>} />
       </Routes>
       <Footer/>
